@@ -257,8 +257,8 @@
                     sessionStorage.setItem("short", ipAddress.value + " /" + mask[cidr.selectedIndex][0]);
                     sessionStorage.setItem("textSummary", textSummary);
                     sessionStorage.setItem("rangePossible", rangePossible);
-                    window.open("cal.html");
-                    window.close("subnet.html");
+                    window.open("calculate.html");
+                    window.close("index.html");
                 }
             }
         }
@@ -312,9 +312,6 @@
         </fieldset>
 
     </form>
-
-
-
     <script>
         csubnet = '8'
         function setSubnetV(inval) {
@@ -323,7 +320,6 @@
         }
 
         function popSubnet(inval) {
-            //alert(csubnet);
             var lowerlimit = 0;
             if (inval == 'a') lowerlimit = 8;
             if (inval == 'b') lowerlimit = 16;
